@@ -5,6 +5,13 @@
 #4: #334443: Dark Slate
 */
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 /* Global styles 
 ------------------------------------*/
 body {
@@ -20,6 +27,7 @@ h2, h3, h4 {
     font-family: "Bebas Neue", sans-serif;
     color: #34656D;
     margin-bottom: 0.5em;
+    margin: 0;
 }
 
 h1 {
@@ -27,6 +35,7 @@ h1 {
     color: #FAEAB1;
     font-size: 3em;
     font-weight: 700;
+    margin: 0;
 }
 
 h2 {
@@ -43,6 +52,26 @@ p, li {
     font-weight: 400;
 }
 
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
 /* Header & Footer 
 ------------------------------------*/
 header {
@@ -52,10 +81,10 @@ header {
     padding: 2em 1em;
 }
 
-header img {
-    width: 150px;
+.profile-img {
     border-radius: 50%;
-    margin-bottom: 1em;
+    width: 100%;
+    margin-right: 30px;
 }
 
 footer {
@@ -77,6 +106,11 @@ footer a:hover {
 
 footer h2 {
      color: #FAEAB1;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
 }
 
 /* Work Experience & Education
